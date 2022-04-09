@@ -6,14 +6,30 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.16.13",
+    "aws-amplify": "^4.3.19",
+    "aws-amplify-react": "^5.1.9",
+    "axios": "^0.26.1",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-jsx-control-statements": "^4.1.2",
+    "customize-cra": "^1.0.0",
+    "eslint-plugin-jsx-control-statements": "^2.2.1",
+    "qrcode.react": "^3.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "less": "^4.1.0",
+    "node-sass": "^6.0.1",
+    "less-loader": "^7.2.1",
+    "react-app-rewired": "^2.1.8"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

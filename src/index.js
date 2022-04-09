@@ -1,14 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import Amplify from "aws-amplify";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(
-  <React.StrictMode>
+import App from "./App";
+import aws_exports from "./aws-exports";
+import reportWebVitals from "./reportWebVitals";
+
+import {
+  accountDataReducer,
+  initialState as accountData,
+} from "./reducers/accountDataReducer";
+import { AccountDataProvider } from "./context/accountData";
+
+import "./styles/style.scss";
+
+Amplify.configure(aws_exports);
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
+  <AccountDataProvider initialState={accountData} reducer={accountDataReducer}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </AccountDataProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,74 @@
+#root {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.app {
+    padding: 2rem;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.cursor-pt {
+    cursor: pointer;
+}
+
+.auth-container {
+    .logo {
+        display: block;
+        margin: 3rem auto;
+    }
+    .card-title {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.app-container {
+    .header {
+        margin-bottom: 3rem;
+    }
+}
+
+.application-page,
+.application-detail-page {
+    .ant-card {
+        .application-item {
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+        .data-row {
+            margin-bottom: 0.8rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
