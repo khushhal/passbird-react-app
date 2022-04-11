@@ -10,8 +10,8 @@ jobs:
     env:
       BUCKET: passbird-react-app
       DIST: build
-      REGION: ${{ env.AWS_DEFAULT_REGION }}
-      DIST_ID: ${{ env.AWS_DIST_ID }}
+      REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      DIST_ID: ${{ secrets.AWS_DIST_ID }}
 
     steps:
       - name: Checkout
