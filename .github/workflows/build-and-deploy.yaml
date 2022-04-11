@@ -8,10 +8,10 @@ jobs:
     name: Build and Deploy
     runs-on: self-hosted
     env:
-      BUCKET: <bucket-name>
+      BUCKET: passbird-react-app
       DIST: build
-      REGION: us-east-1
-      DIST_ID: <ID>
+      REGION: ${{ env.AWS_DEFAULT_REGION }}
+      DIST_ID: ${{ env.AWS_DIST_ID }}
 
     steps:
       - name: Checkout
